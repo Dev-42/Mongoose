@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mongoose": "^7.5.0"
+  },
+  "name": "mongoose",
+  "description": "This repo contains all the files which are required by me for learning Mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-42/Mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-42/Mongoose/issues"
+  },
+  "homepage": "https://github.com/Dev-42/Mongoose#readme"
+}
