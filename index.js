@@ -5,6 +5,9 @@ const userSchema = mongoose.Schema({
     name : {type : String , validation : true , unique : true},
     age : {type : Number , default : 18},
     country : {type : String , required : true, enum : ["USA","India","Maldives"],default : "India"}
+},{
+    timestamps: true,
+    versionKey : false
 })
 const UserModule = mongoose.model('user',userSchema)
 
@@ -13,7 +16,7 @@ const main = async() => {
         const connection = await mongoose.connect('mongodb://127.0.0.1:27017/mgnclass')
         console.log("Connected to database")
         // Inserting data is so simple by creating schemas
-        await UserModule.insertMany([{name : "Arbaz"}])
+        await UserModule.insertMany([{name : "Mia Khalifa"}])
         console.log("Data inserted")
         // It's so simple to read data
         // const data = await UserModule.find()
